@@ -1,3 +1,1 @@
-# graphını yesillestirmek icin autocommit task scheduler ile her gun calısacak sekilde ayarlayabilirsin ve larplayabilirsin
-
-# #LARP
+# graphını yesillestirmek icin autocommit task scheduler ile her gun calısacak sekilde ayarlayabilirsin ve #larplarplarp
