@@ -20,7 +20,7 @@ function Invoke-GitRemote {
 
 # GitHub'da yapilan degisiklikleri (orn. web'den readme duzenleme) once cek,
 # yoksa push "rejected (fetch first)" hatasi verir
-Invoke-GitRemote pull --rebase origin main
+Invoke-GitRemote pull --rebase --autostash origin main
 
 # Onceki calismadan kalan push edilmemis commit varsa once onlari gonder
 Invoke-GitRemote push origin main
