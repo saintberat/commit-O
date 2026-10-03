@@ -7,6 +7,10 @@ $gitPath = "git"
 $runLog = Join-Path $repoPath "auto-commit.log"
 Start-Transcript -Path $runLog -Append | Out-Null
 
+# GitHub'da yapilan degisiklikleri (orn. web'den readme duzenleme) once cek,
+# yoksa push "rejected (fetch first)" hatasi verir
+& $gitPath pull --rebase origin main
+
 # Onceki calismadan kalan push edilmemis commit varsa once onlari gonder
 & $gitPath push origin main
 
